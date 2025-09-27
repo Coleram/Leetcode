@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, graphicx}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+
+\title{LaTex Template}
+\author{Hao Yin}
+\date{\today}
+\maketitle
+
+\section*{Question}
+    Given an integer array \(\texttt{nums}\) and an integer \(\texttt{target}\), 
+        find \emph{two} distinct elements in the array whose sum equals 
+        \(\texttt{target}\), and return their indices.
+    You may assume there is exactly one valid answer for each input, and you may not
+        use the same element twice.  
+        Return the answer in any order.
+
+    \paragraph{Examples}
+    \begin{itemize}
+    \item \textbf{Input:} \(\texttt{nums} = [2,7,11,15],\ \texttt{target} = 9\) \\
+            \textbf{Output:} \(\texttt{[0,1]}\) \\
+            \textbf{Explanation:} \(\texttt{nums[0]} + \texttt{nums[1]} = 2 + 7 = 9\).
+    \item \textbf{Input:} \(\texttt{nums} = [3,2,4],\ \texttt{target} = 6\) \\
+            \textbf{Output:} \(\texttt{[1,2]}\)
+    \item \textbf{Input:} \(\texttt{nums} = [3,3],\ \texttt{target} = 6\) \\
+            \textbf{Output:} \(\texttt{[0,1]}\)
+    \end{itemize}
+
+    \paragraph{Constraints}
+    \[
+    \begin{aligned}
+    &2 \le \texttt{nums.length} \le 10^{4},\\
+    &-10^{9} \le \texttt{nums}[i] \le 10^{9},\\
+    &-10^{9} \le \texttt{target} \le 10^{9},\\
+    &\text{Exactly one valid answer exists.}
+    \end{aligned}
+    \]
+
+    \paragraph{Follow-up}
+    Can you design an algorithm with time complexity strictly better than 
+        \(O(n^{2})\)?
+
+\section*{Solution}
+    First thought: use a sort to get a ordered array and two for loop and add
+        from the left side to the right side. Will not work because after 
+        sorting the index is messed up, one way is to use if condition to match
+        each element in origin array and ordered array but it can not work for
+        same element with different index.(2025/9/27)
+
+    Second thought: use the dumbest brute force solution to traverse all 
+        possible solutions.(Passed:91ms, 13.83mb 2025/9/27)
+
+    
+
+
+\end{document}
