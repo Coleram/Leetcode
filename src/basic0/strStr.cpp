@@ -5,7 +5,7 @@
 
 using namespace std;
 
-// Brute Force 2025/9/28 (Passed: 0 ms, 8.36 MB)
+// 2025/9/28 Brute Force (Passed: 0 ms, 8.36 MB)
 class Solution {
 public:
     int strStr(string haystack, string needle) {

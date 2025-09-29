@@ -5,7 +5,7 @@
 
 using namespace std;
 
-// Hash (Passed: 0 ms, 9.28 MB)
+// 2025/9/28 Hash  (Passed: 0 ms, 9.28 MB)
 class Solution {
 public:
     char findTheDifference(string s, string t) {

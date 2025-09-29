@@ -5,7 +5,7 @@
 
 using namespace std;
 
-// Hash (Passed: 7 ms, 9.81 MB)
+// 2025/9/28 Hash (Passed: 7 ms, 9.81 MB)
 class Solution {
 public:
     bool isAnagram(string s, string t) {
@@ -62,7 +62,7 @@ public:
     }
 };
 
-// Sort (Passed: 7 ms, 9.61 MB)
+// 2025/9/28 Sort (Passed: 7 ms, 9.61 MB)
 class Solution {
 public:
     bool isAnagram(string s, string t) {
