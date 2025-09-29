@@ -47,14 +47,19 @@
         \(O(n^{2})\)?
 
 \section*{Solution}
-    First thought: use a sort to get a ordered array and two for loop and add
+    First attempt: use a sort to get a ordered array and two for loop and add
         from the left side to the right side. Will not work because after 
         sorting the index is messed up, one way is to use if condition to match
         each element in origin array and ordered array but it can not work for
-        same element with different index.(2025/9/27)
+        same element with different index. (2025/9/27)
 
-    Second thought: use the dumbest brute force solution to traverse all 
-        possible solutions.(Passed:91ms, 13.83mb 2025/9/27)
+    Brute Force: use the dumbest brute force solution to traverse all 
+        possible solutions. (Passed:91 ms, 13.83 MB 2025/9/27)
+
+    Hash Map: use hash map and check the complement, from $O(n^2) \to O(n)$. (
+        Passed: 3 ms, 14.51 MB 2025/9/28)
+
+    
 
     
 

@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, graphicx}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+
+\title{LaTex Template}
+\author{Hao Yin}
+\date{\today}
+\maketitle
+
+\section*{Question}
+    Given an array of strings \(\texttt{strs}\), group the anagrams together and
+        return the result as a list of groups. You may return the groups in any 
+        order. An \emph{anagram} is a word formed by rearranging the letters of 
+        another word,using all the original letters exactly once.
+
+\paragraph{Examples}
+\begin{itemize}
+  \item \textbf{Input:} \(\texttt{strs} = ["eat","tea","tan","ate","nat","bat"]
+    \) \\ \textbf{Output:} \(\texttt{[["bat"],["nat","tan"],["ate","eat","tea"]]
+    }\)
+  \item \textbf{Input:} \(\texttt{strs} = [""]\) \\
+        \textbf{Output:} \(\texttt{[[""]]}\)
+  \item \textbf{Input:} \(\texttt{strs} = ["a"]\) \\
+        \textbf{Output:} \(\texttt{[["a"]]}\)
+\end{itemize}
+
+\paragraph{Constraints}
+\[
+\begin{aligned}
+&1 \le \texttt{strs.length} \le 10^{4},\\
+&0 \le \texttt{strs}[i].\text{length} \le 100,\\
+&\texttt{strs}[i]\ \text{consists of lowercase English letters only.}
+\end{aligned}
+\]
+
+\section*{Solution}
+
+
+\end{document}
