@@ -6,7 +6,7 @@
 
 using namespace std;
 
-// Brute Force 2025/9/27
+// Brute Force 2025/9/27 (Passed: 91 ms, 13.8 MB)
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target){
@@ -28,7 +28,7 @@ public:
     }
 };
 
-// Hash Map 2025/9/28
+// Hash Map 2025/9/28 (Passed: 3 ms, 14.5 MB)
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target){
