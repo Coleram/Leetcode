@@ -23,11 +23,30 @@ public:
     }
 };
 
-// 2025/10/8
-// Intuitive Solution
+// 2025/10/16
+// Intuitive Solution(Passed:0 ms, 98.19 MB)
 class Solution {
 public:
     bool isMonotonic(vector<int>& nums) {
-        
+        bool up = true;
+        bool down = true;
+        for (int i = 0; i < nums.size() - 1; i++)
+        {
+            if ((nums[i] - nums[i + 1]) > 0)
+            {
+                up = false;
+            }else if ((nums[i] - nums[i + 1]) < 0)
+            {
+                down = false;
+            }else{
+                continue;
+            }
+
+            if (!(up || down))
+            {
+                return false;
+            }
+        }
+        return true;
     }
 };
